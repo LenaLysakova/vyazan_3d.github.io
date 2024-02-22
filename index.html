@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Вязань</title>
+
+    <style>
+
+    .nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 1000px;
+    height: 107px;
+}
+
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    width: 1000px;
+    height: 654px;
+}
+
+body {
+      padding: 3% 6%;
+      background-color: rgb(255, 255, 255);
+      font-family: "Montserrat";
+      font-size: 15px;
+      line-height: 20px;
+      color: #000000;
+      box-sizing: border-box;}
+
+      .footer {
+      display: flex;
+      margin-bottom: 0px;
+      flex: 1;
+        /*Добавляем внутренний правый отступ.*/
+      padding-right:10px;}
+
+      @media screen and (max-width: 768px) {
+      .row {
+      /*
+      * На узких экранах переносим не поместившиеся карточки на следующую строку.*/
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      }
+    }
+
+    .project-article {
+  box-sizing: border-box;
+  /*
+  * Меняем фиксированную ширину на ограниченную: если экран меньше 400 пикселей,
+  * элемент займёт всю доступную ширину; если больше 400 — ровно 400 пикселей.*/
+  max-width: 900px;
+}
+
+h1 {
+        font-size: 28px;
+        line-height: 31px;
+        font-weight: bold;
+        color: #333333;}
+
+      h2 {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: bold;
+        color: #333333;
+        margin: .88em 0 .30em 0;
+      }
+
+      h3 {
+        color: #333333;
+        font-family: sans-serif;
+        font-weight: bold;
+        /*Сбрасываем отступы, чтобы заголовок не отбивался от последующего текста.*/
+        margin: 1;}
+
+      p {
+        color: #333333;
+        margin: 0 0 .88em 0;}
+
+    
+
+      .row {
+        /*row — флекс-контейнер, этаж портфолио*/
+      display: flex;
+      margin-bottom: 0px;}
+
+      @media screen and (max-width: 768px) {
+      .row {
+      /*
+      * На узких экранах переносим не поместившиеся карточки на следующую строку.*/
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      }
+    }
+
+      .spacer {
+        /*.spacer — колонка в перебивке. Колонки будут делить этаж поровну.*/
+      flex: 1;
+        /*Добавляем внутренние отступы и верхнюю границу.*/
+      padding: 0px 0px 0 0;}
+
+  </style>
+</head>
+
+
+
+<body>
+
+  <!-- Меню -->
+  
+  <header class="header wrap">
+
+    <nav class="nav">
+      <a href="#">Вязань</a>
+      <a href="#">Товары</a>
+      <a href="#">О нас</a>
+      <a href="#">Блог</a>
+      <a href="#">Контакты</a>
+    </nav>
+
+
+    <!-- Первый блок -->
+    <section class="hero wrap">
+      <div class="hero__photo">
+      <img class="tile__image" src="images/Slice 6.png" alt="">
+    </div>
+    </section>
+
+    <!-- Ряд карточек -->
+    <nav class="nav">
+    <div class="row">
+      <div class="spacer">
+             <img src="images/Slice 3.png" alt="Photo:Свитера" class="card-photo">
+     </div>
+     <div class="spacer">
+         <img src="images/Slice 4.png" alt="Photo:Платья" class="card-photo">
+     </div>
+     <div class="spacer">
+         <img src="images/Slice 5.png" alt="Photo:Аксессуары" class="card-photo2">
+     </div>
+    </div>
+  </nav>
+    
+
+
+     <!-- Подвал -->
+    
+     <nav class="nav">
+      <div class="row">
+      <p class="footer-text">
+        Вязань
+      </p>
+      <p class="footer-text">
+        +7 491 232-22-22
+      </p>
+    </div>
+
+    <div class="row">
+      <p class="footer-text">
+        Рязань, Вязальная улица, 13/2
+      </p>
+      <p class="footer-text">
+        info@vyazan.ru
+      </p>
+    </div>
+    </nav>
+
+    
+
+    
+
+</body>
+</html>
